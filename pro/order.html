@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Order Confirmation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      background-image: url('4.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease;
+    }
+    h1 {
+      color: #ff6347;
+      text-align: center;
+    }
+    p {
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+    .order-details {
+      margin-top: 30px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+    .order-details p {
+      margin-bottom: 10px;
+    }
+    .food-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .food-item input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    .btn-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: #ff6347;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #e04836;
+    }
+  </style>
+</head>
+<body>
+  <div class="container animate__animated animate__fadeIn">
+    <h1>Food Order Confirmation</h1>
+    <p>Thank you for placing your order. Your food will be prepared shortly.</p>
+    <div class="order-details">
+      <h2>Order Details</h2>
+      <div class="food-info">
+        <img src="food_image.jpg" alt="Food Image" style="max-width: 100%; height: auto;">
+        <h3>Food Name</h3>
+        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum urna eget leo pulvinar, in ultricies nunc iaculis.</p>
+        <p>Price: $10.99</p>
+      </div>
+      <form id="order-form">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required><br>
+        <label for="delivery-address">Delivery Address:</label>
+        <textarea id="delivery-address" name="delivery-address" required></textarea><br>
+        <label for="additional-info">Additional Information:</label>
+        <textarea id="additional-info" name="additional-info"></textarea><br>
+        <div class="btn-container">
+          <button type="submit" class="btn">Confirm Order</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('order-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var formData = new FormData(this);
+      var orderDetails = {};
+      formData.getAll('food').forEach(function(value){
+        if (orderDetails.hasOwnProperty(value)) {
+          orderDetails[value]++;
+        } else {
+          orderDetails[value] = 1;
+        }
+      });
+      orderDetails['quantity'] = formData.get('quantity');
+      orderDetails['delivery-address'] = formData.get('delivery-address');
+      orderDetails['additional-info'] = formData.get('additional-info');
+      console.log(orderDetails); // You can use this data to send to server or perform any other actions
+      alert('Order confirmed!');
+      // You can redirect user to another page after confirmation
+      // window.location.href = 'confirmation-page.html';
+    });
+  </script>
+</body>
+</html>

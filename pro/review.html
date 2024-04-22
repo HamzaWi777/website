@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <link rel="stylesheet" href="reviewstl.css">
+</head>
+<body>
+    <nav>
+        
+            <h1>NutriChoice</h1>
+        
+        <ul>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="menu.html"><b>Menu</b></a></li>
+            <li><a href="review.html"><b>Reviews</b></a></li>
+            <li><a href="login.html"><b>login</b></a></li>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </ul>
+    </nav>
+    <div class="review-container">
+        <h1 >Product Review</h1>
+        <div class="review">
+            <p><h2>Aici vous pouvez votez avec les Stars!</h2></p>
+            <div class="stars">
+                <input type="radio" name="rating" id="star5" value="5"><label for="star5"></label>
+                <input type="radio" name="rating" id="star4" value="4"><label for="star4"></label>
+                <input type="radio" name="rating" id="star3" value="3"><label for="star3"></label>
+                <input type="radio" name="rating" id="star2" value="2"><label for="star2"></label>
+                <input type="radio" name="rating" id="star1" value="1"><label for="star1"></label>
+            </div>
+            <div class="comment">
+                <textarea placeholder="Write your review here"></textarea>
+                <button>Submit</button>
+            </div>
+        </div>
+        <div class="old-reviews">
+            <h2>Old Reviews</h2>
+            <ul>
+                <li>
+                    <div class="stars"></div>
+                    <p>Review comment goes here.</p>
+                </li>
+                <!-- Add more li elements for additional old reviews -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('1.jpg') no-repeat;
+    background-size:auto;
+    background-position: center;
+    background-size: cover;
+    
+}
+nav{
+    width: 85%;
+    height: 40px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    position: fixed;
+    top: 10%;
+    color: #ffffff;
+    backdrop-filter:blur(3px);
+    
+}
+nav ul{
+    display: flex;
+    margin-left: 10%;
+     
+}
+
+ul li{
+     list-style: none;
+     font-size: 35px;
+     align-items: center;
+}
+li a{
+     text-decoration: underline 1.5px;
+     font-size: 1.5rem;
+     color: #fff;
+     margin-inline: 1.5rem;
+     
+}
+a:hover{
+     color: rgb(150, 227, 137);
+}
+.logo{
+     font-size: 2.5rem; 
+     color: #ffffff;
+     padding-left: 0%;
+}
+ 
+
+
+.head h1{
+    padding-top: 15%;
+    text-align: center;
+    font-size: 43px;
+    text-decoration: underline;
+    border-radius: 10px;
+    font-size: 55px;
+    color: #e4e4e4;
+    
+
+}
+.blog {
+    display: inline-block;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Align items to the left */
+    gap: 1.5rem; /* Add space between the cards */
+}
+
+.blogCard {
+    width: calc(20% - 2rem); /* Adjust width to fit four cards in one line */
+    height: 300px; /* Initial height */
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1.5rem;
+    display: inline-block;
+    overflow:hidden; /* Hide overflow content */
+    margin-left: 70px;
+    margin-right:-67px;
+    border-radius: 20px;
+}
+
+.blogCard img {
+    margin-top: 10%;
+    width: 70%;
+    height: 50%;
+    display: flex; /* Utiliser un modèle de boîte flexible */
+    flex-direction: column; /* Aligner les éléments verticalement */
+    align-items: center; /* Centrer les éléments horizontalement */
+    padding-left: 15%;
+    justify-content: center; /* Centrer les éléments verticalement */
+    border-radius: 20px;
+}
+
+.blogCard p {
+    padding: 10%;
+}
+.blogCard button{
+    margin-bottom: 20%;
+    margin-right: 20%;
+}
+.blogCard h2{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 20px;
+    color: rgb(8, 60, 60);
+    
+}
+.blogCard h2:hover{
+    color: rgb(20, 137, 137);
+    cursor: pointer;
+}
+/* Style de base pour le lien */
+.add-to-cart-btn {
+    display: inline-flex;
+    padding: 5px 10px;
+    background-color: #007bff; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement du lien */
+    border-radius: 8%; /* Coins arrondis */
+    transition: background-color 0.5s ease; /* Transition de couleur au survol */
+  }
+  
+  /* Style au survol */
+  .add-to-cart-btn:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+  }
+  
+  /* Style de l'icône */
+  .add-to-cart-btn i {
+    margin: -25%;
+    margin-right: 126px; 
+  
+  }
+  .chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  .chat-popup-content {
+    padding: 20px;
+  }
+  
+  .chat-popup-close {
+    float: right;
+    cursor: pointer;
+  }
+  
+  .chat-messages {
+    height: 150px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .chat-messages p {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .chat-popup input[type="text"] {
+    width: 91%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .chat-popup button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .chat-popup button:hover {
+    background-color: #555;
+  }
+  .chat-icon img {
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  .chat-icon:hover{
+    cursor: pointer; 
+    transform: scale(1.2); 
+   
+  }

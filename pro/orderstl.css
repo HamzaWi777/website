@@ -1,0 +1,147 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set full height for body and html */
+body, html {
+  height: 100%;
+}
+
+/* Set background color and center the content */
+body {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the container */
+.container {
+  max-width: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the form */
+.order-form {
+  margin-bottom: 20px;
+}
+
+/* Style for the headings */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style for the select dropdown */
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Style for the checkboxes */
+input[type="checkbox"] {
+  margin-top: 10px;
+}
+
+/* Style for the quantity selector */
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Style for the submit button */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for the alert box */
+.alert {
+  width: 100%;
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* Set full height and width for body and html */
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Add black background color to body */
+body {
+  background-color: black;
+}
+
+/* Center the content vertically and horizontally */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Set maximum width for the container */
+.container {
+  max-width: 600px;
+}
+
+/* Add padding to the container */
+.container {
+  padding: 20px;
+}
+
+/* Style for the quantity selector */
+input[type="number"] {
+  width: 60px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+/* Style for the submit button */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style for the alert box */
+.alert {
+  width: 100%;
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}

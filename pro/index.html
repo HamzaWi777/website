@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script src="index.js"></script>
+  <script src="script.js"></script>
+  <body>
+    <div class="container">
+      <div class="body">
+        <nav>
+          <div class="logo">
+            <h1>NutriChoice</h1>
+          </div>
+        </nav>
+      </div>
+
+      <div class="main">
+        <div class="mainText">
+          <h1>
+            "The secret of success in life is to eat what you like and let the
+            food fight it out inside"
+          </h1>
+          <br />
+        </div>
+      </div>
+
+      <div class="trendfood">
+        <h1>Trending Food</h1>
+        <br />
+        <div class="trend">
+          <img src="baguette.jpg" />
+          <img src="fettucines-alfredo.jpg" />
+          <img src="Gateau-frigidaire-vanille-et-Ferrero-Rocher.jpg" />
+        </div>
+
+        <div class="trend">
+          <img src="lasagne.jpg" />
+          <img src="mascarpone.jpg" />
+          <img src="pates-a-la-tomate-aux-epinards-et-champignons.jpg" />
+        </div>
+
+        <div class="trend">
+          <img src="Philly-Cheesesteak-47074040.jpg" />
+          <img src="pizza_pepperoni.jpg" />
+          <img src="pizza-russe-choucroute-croute-.jpg" />
+        </div>
+
+        <div class="trend">
+          <img src="poisson.jpg" />
+          <img src="poulet-frit-frites-repas-nuggets_1339-111992.jpg" />
+          <img
+            src="Recette-CheeseCake-Vanille-Chocolat-Caramel-1_les-recettes-de-vanessa.jpg"
+          />
+        </div>
+
+        <div class="trend">
+          <img src="recette-pizza-chou-fleur-saumon-avocat.jpg" />
+          <img src="Salade-cesar-poulet-pistou.jpg" />
+
+          <img src="sandwich sain et gourmand.jpg" />
+        </div>
+        <div class="trend">
+          <img src="spaghetti.jpg" />
+          <img src="Spaghetti-au-pesto-de-basilic-et-legumes.jpg" />
+          <img src="spaghetti-fruits-de-mer.jpg" />
+        </div>
+      </div>
+      <div class="chat-icon">
+        <img height="80px" src="chatbot.jpg" alt="Chatbot Icon" />
+      </div>
+
+      <div class="chat-popup">
+        <div class="chat-popup-content">
+          <span class="chat-popup-close">&times;</span>
+          <h3>Chefbot</h3>
+          <div class="chat-messages"></div>
+          <input
+            onkeypress="handleEvent(event)"
+            type="text"
+            id="user-input"
+            placeholder="Type your message..."
+          />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+
+      <div class="mainText">
+        <a href="menu.html"
+          ><button class="btn"><b>Welcome </b></button></a
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style_menu.css">
+    
+</head>
+<script src="index.js"></script>
+<script src="script.js"></script>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>NutriChoice</h1>
+        </div>
+        <ul>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="menu.html"><b>Menu</b></a></li>
+            <li><a href="review.html"><b>Reviews</b></a></li>
+            <li><a href="login.html"><b>login</b></a></li>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </ul>
+    </nav>
+    </nav>
+    <div id="blog">
+        <div class="head">
+            <h1>Food Blogs</h1>
+        </div>
+        <div class="blogs">
+            <div class="blogCard">
+                <img src="baguette.jpg" alt="">
+                <h2 class="seemore-button" onclick="showMore(this)">Bguette Farcie</h2>
+                <p class="hidden-content" style="display: none;"></pclass>Une baguette fraîche et croustillante garnie de viandes, fromages, légumes et condiments, offrant une explosion de saveurs dans chaque bouchée.</p>
+                <a href="order.html" class="add-to-cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                            Ajouter 
+                            au panier
+                 </a>
+                  
+            </div>
+           
+       
+            <div class="blogCard">
+            <img src="fettucines-alfredo.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Pâtes Alfredo aux crevettes Ricardo</h2>
+            <p class="hidden-content" style="display: none;">Un plat de pâtes crémeux et décadent, associant des crevettes succulentes à une sauce Alfredo riche en crème, en beurre et en fromage .</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+            <div class="blogCard">
+            <img src="Gateau-frigidaire-vanille-et-Ferrero-Rocher.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Gâteau frigo vanille et Ferrero Rocher</h2>
+            <p class="hidden-content" style="display: none;">Un dessert délicieux, composé de couches crémeuses de vanille alternées avec des morceaux croquants de Ferrero Rocher, le tout réfrigéré pour une texture parfaite et une explosion de saveurs .</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+            <div class="blogCard">
+            <img src="lasagne.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Lasagne </h2>
+            <p class="hidden-content" style="display: none;">Un plat italien classique composé de fines feuilles de pâtes intercalées avec une sauce bolognaise savoureuse, une béchamel onctueuse et du fromage fondant, le tout cuit au four jusqu'à obtenir une délicieuse perfection dorée.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+            <div class="blogCard">
+            <img src="pass.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Spaghetti sauce rouge aux scalopes </h2>
+            <p class="hidden-content" style="display: none;">Une baguette fraîche et croustillante garnie de viandes, fromages, légumes et condiments, offrant une explosion de saveurs dans chaque bouchée.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+            <div class="blogCard">
+            <img src="pates-a-la-tomate-aux-epinards-et-champignons.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Pâtes à la tomate aux épinards et champignons </h2>
+            <p class="hidden-content" style="display: none;">Un plat savoureux et équilibré où des pâtes sont accompagnées d'une sauce tomate maison, enrichie d'épinards frais sautés et de champignons, offrant une combinaison délicieuse de légumes verts et de saveurs riches en umami.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+            <div class="blogCard">
+            <img src="mascarpone.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Verrine au mascarpone </h2>
+            <p class="hidden-content" style="display: none;">Un dessert élégant et raffiné composé de couches de mascarpone crémeux alternées avec des biscuits imbibés de café ou de liqueur, offrant une combinaison de textures et de saveurs délicieuses dans un format individuel et élégant.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+            <div class="blogCard">
+            <img src="pancake-640.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Pancake</h2>
+            <p class="hidden-content" style="display: none;">Une délicieuse préparation à base de pâte à crêpe épaisse, cuite à la poêle et servie traditionnellement avec du sirop d'érable, du beurre fondu, des fruits frais ou d'autres garnitures sucrées ou salées, offrant une option délicieusement réconfortante pour le petit-déjeuner ou le brunch.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+            <div class="blogCard">
+            <img src="Philly-Cheesesteak-47074040.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Philly Cheesesteak</h2>
+            <p class="hidden-content" style="display: none;">Un sandwich emblématique de la ville de Philadelphie, composé de fines tranches de bœuf grillées ou sautées, généralement associées à des poivrons et des oignons sautés, le tout servi sur un pain à sous-marin moelleux et garni de fromage fondu, offrant une explosion de saveurs salées et riches en umami.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+            <div class="blogCard">
+            <img src="pizza_pepperoni.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Pizza Pepperoni</h2>
+            <p class="hidden-content" style="display: none;">Une pizza classique garnie de sauce tomate, de fromage mozzarella et de fines tranches de pepperoni, un salami italien épicé, offrant une combinaison irrésistible de saveurs salées et épicées sur une croûte croustillante.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+            <div class="blogCard">
+            <img src="pizza-epinards.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Pizza aux épinards</h2>
+            <p class="hidden-content" style="display: none;">Une délicieuse variante de pizza garnie de sauce tomate ou de crème fraîche, de fromage mozzarella et de feuilles d'épinards frais, offrant une combinaison savoureuse de saveurs végétales et de fromage fondant sur une croûte croustillante.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+            <div class="blogCard">
+            <img src="creppe.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Crêpe au chocolat et fruits </h2>
+            <p class="hidden-content" style="display: none;">Une crêpe délicieusement garnie de chocolat fondu ou de Nutella, et garnie de tranches de fruits frais tels que des fraises, des bananes, des framboises ou des kiwis. </p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+            <div class="blogCard">
+            <img src="poisson.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Poisson aux légumes au four</h2>
+            <p class="hidden-content" style="display: none;">Un plat délicieux et sain qui marie la tendresse du poisson avec la fraîcheur et la saveur des légumes.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+            <div class="blogCard">
+            <img src="pizza-thon-123rf.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Pizza au thon</h2>
+            <p class="hidden-content" style="display: none;">Une pizza garnie de sauce tomate ou de crème fraîche, de fromage mozzarella et de morceaux de thon en conserve, souvent accompagnés d'olives noires, d'oignons rouges et parfois de câpres, offrant une combinaison savoureuse de saveurs marines sur une croûte croustillante.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+            <div class="blogCard">
+            <img src="pizza-viande-hachée.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Pizza à la viande hachée </h2>
+            <p class="hidden-content" style="display: none;">Une pizza traditionnelle garnie de sauce tomate ou de sauce barbecue, de fromage mozzarella et de viande hachée assaisonnée, généralement de bœuf ou de porc</p>                
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+            <div class="blogCard">
+            <img src="polet_roti.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Poulet rôti avec pommes de terre </h2>
+            <p class="hidden-content" style="display: none;">Cette combinaison de poulet juteux et de pommes de terre rôties crée un repas copieux et satisfaisant, parfait pour une soirée en famille ou entre amis.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+            <div class="blogCard">
+            <img src="Recette-pates-aux-champignons.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Pâtes aux champignons </h2>
+            <p class="hidden-content" style="display: none;">Des pâtes sont associées à une sauce crémeuse aux champignons qui  sont sautés avec de l'ail et des herbes aromatiques pour créer une sauce veloutée qui enrobe chaque brin de pâtes. Ce plat est souvent garni de persil frais pour ajouter une touche de fraîcheur et est apprécié pour son équilibre entre simplicité et gourmandise.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+            <div class="blogCard">
+            <img src="recette-pizza-chou-fleur-saumon-avocat.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Pizza au chou-fleur, saumon et avocat</h2>
+            <p class="hidden-content" style="display: none;"> Une création culinaire contemporaine où une base de croûte de chou-fleur, légère et nutritive, est sublimée par des tranches de saumon fumé, apportant une richesse salée, et des tranches d'avocat crémeux, ajoutant une texture onctueuse et une fraîcheur subtile.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+        <div class="blogCard">
+            <img src="Salade-cesar-poulet-pistou.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Salade César au poulet pistou</h2>
+            <p class="hidden-content" style="display: none;"> Une création culinaire équilibrée et pleine de saveurs, où des morceaux de poulet tendres et grillés sont associés à une base de laitue croquante, de croûtons dorés et de copeaux de parmesan. Cette salade est sublimée par une délicieuse vinaigrette pistou maison, à base d'huile d'olive, de basilic frais, d'ail et de parmesan, qui ajoute une fraîcheur herbacée et une touche de richesse au plat.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+        <div class="blogCard">
+            <img src="sandwich sain et gourmand.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Sandwich sain et gourmand</h2>
+            <p class="hidden-content" style="display: none;"> Ce sandwich est composé de pain complet ou multigrain, riche en fibres et en éléments nutritifs essentiels. À l'intérieur, une combinaison savoureuse d'ingrédients sains et gourmands offre une expérience gustative satisfaisante. Des tranches de poulet grillé ou de dinde maigre apportent des protéines de qualité, tandis que des légumes frais comme la laitue, les tomates et les tranches de concombre ajoutent une texture croquante et une explosion de saveurs vives. </p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+        <div class="blogCard">
+            <img src="Sandwicherie-.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Sandwich américain</h2>
+            <p class="hidden-content" style="display: none;"> Une création culinaire contemporaine où une base de croûte de chou-fleur, légère et nutritive, est sublimée par des tranches de saumon fumé, apportant une richesse salée, et des tranches d'avocat crémeux, ajoutant une texture onctueuse et une fraîcheur subtile.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+        <div class="blogCard">
+            <img src="spaghetti.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Spaghetti à la sauce tomate et tranche de scalope </h2>
+            <p class="hidden-content" style="display: none;"> Un plat alléchant qui associe des spaghetti parfaitement cuits à une sauce pesto fraîche et parfumée à base de basilic, d'ail, de pignons de pin, de fromage parmesan et d'huile d'olive extra vierge.. Pour ajouter de la texture et de la couleur, des légumes de saison sont souvent ajoutés, tels que des tomates cerises coupées en deux, des courgettes en dés ou des haricots verts blanchis. </p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+        <div class="blogCard">
+            <img src="Spaghetti-au-pesto-de-basilic-et-legumes.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Spaghetti au pesto de basilic et légumes </h2>
+            <p class="hidden-content" style="display: none;"> Un plat alléchant qui associe des spaghetti parfaitement cuits à une sauce pesto fraîche et parfumée à base de basilic, d'ail, de pignons de pin, de fromage parmesan et d'huile d'olive extra vierge.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+        <div class="blogCard">
+            <img src="spaghetti-fruits-de-mer.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Spaghetti aux fruits de mer</h2>
+            <p class="hidden-content" style="display: none;">  Un plat délicieux et raffiné qui marie la texture tendre des spaghetti avec la richesse des fruits de mer frais. Les pâtes sont accompagnées d'une sauce généreusement garnie de fruits de mer tels que des crevettes, des moules, des calmars .La sauce peut être préparée avec une base de tomates, d'ail, d'oignons et de bouillon de poisson, ou simplement avec de l'huile d'olive, de l'ail et du persil pour mettre en valeur les fruits de mer.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        </div>
+        <div class="blogCard">
+            <img src="tacos-aux-crevettes-et-poivrons.jpg" alt="">
+            <h2 class="seemore-button" onclick="showMore(this)">Tacos aux crevettes et poivrons </h2>
+            <p class="hidden-content" style="display: none;">Une fusion délicieuse de saveurs qui marie la fraîcheur des crevettes avec la douceur et la texture croquante des poivrons. Dans cette recette, des crevettes sautées sont assaisonnées avec un mélange d'épices savoureuses, telles que le paprika, le cumin et l'ail en poudre, pour leur donner une saveur vibrante et épicée. Les poivrons, coupés en lanières et légèrement sautés, ajoutent une touche de douceur et de couleur à la garniture.</p>
+            <a href="#" class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                        Ajouter 
+                        au panier
+             </a>
+        
+        </div>
+     
+
+    </div>
+    <div class="chat-icon">
+        <img height="80px" src="chatbot.jpg" alt="Chatbot Icon" />
+      </div>
+
+      <div class="chat-popup">
+        <div class="chat-popup-content">
+          <span class="chat-popup-close">&times;</span>
+          <h3>Chefbot</h3>
+          <div class="chat-messages"></div>
+          <input
+            onkeypress="handleEvent(event)"
+            type="text"
+            id="user-input"
+            placeholder="Type your message..."
+          />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+</body>
+</html>
